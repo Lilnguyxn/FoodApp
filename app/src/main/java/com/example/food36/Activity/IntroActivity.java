@@ -1,5 +1,6 @@
 package com.example.food36.Activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -33,13 +34,15 @@ public class IntroActivity extends AppCompatActivity {
         binding.btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent it = new Intent(IntroActivity.this,LoginActivity.class);
+                startActivity(it);
             }
         });
         binding.btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent it = new Intent(IntroActivity.this,SignUpActivity.class);
+                startActivity(it);
             }
         });
     }
